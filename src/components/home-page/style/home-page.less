@@ -4,16 +4,20 @@
 }
 .Header{
     width: 100%;
-    height: 727px;   
     background-size: 100%;
     background-image: url('../image/bgc-image1.png');
     background-repeat: no-repeat;
+    padding-bottom: 50px;
     .Nav{
         padding-top:16px;
+        overflow: hidden;
         .nav-left{
             overflow: hidden;
+            float: left;
             img{
                 float: left;
+                width: 30px;
+                height: 30px;
             }
             .nav-title{
                 overflow: hidden;
@@ -38,21 +42,48 @@
                 }
             }
         }
+        .nav-right{
+            float: right;
+            overflow: hidden;
+            margin-right: 3%;
+            div:last-of-type{
+                margin: 0;
+                img{
+                    vertical-align:middle;
+                }
+                span{
+                    font-size: 12px;
+                    color:#72550E;
+                    margin-right: 8px;
+                    font-weight: 500;
+                }
+            }
+            div{
+                float: left;
+                margin-right: 30px;
+                // line-height: 23px;
+            }
+        }
     }
     .header-image1{
         width: 100%;
         // margin: 0 auto;
         text-align: center;
-        margin-top: 75px;
+        margin-top: 60px;
         position: relative;
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+        }
     }
     .header-image2{
         overflow: hidden;
         position: absolute;
-        top:430px;
-        left:275px;
+        top:520px;
+        left:310px;
         img{
-            float: left;
+            // float: left;
+            width: 348px;
         }
     }
 }
@@ -82,13 +113,15 @@
             text-align: center;
             padding-top:10px;
             padding-left: 30px;
+            margin: 0 auto;
             li{
                 float: left;
                 font-family:MicrosoftYaHei-Bold;
                 color: #72550E;
-                margin-right: 41px;
+                margin-right:6.5%;
                 font-weight: bold;
                 font-size: 18px;
+                // width:7%;
                 a{
                     color: #72550E;
                     text-decoration:none;
@@ -104,8 +137,10 @@
                 font-weight: normal;
                 font-family: MicrosoftYaHei;
                 margin-top: -8px;
-                margin-right: 3 0px;
+                margin-right:4%;
                 overflow: hidden;
+                // width: 11%;
+                text-align: center;
                 p{
                     font-size:15px;
                 }
@@ -117,6 +152,7 @@
                 }
                 .logo_a{
                    overflow: hidden;
+                   margin-left: 3px;
                 }
                 .line{
                     width: 15px;
@@ -137,9 +173,13 @@
         overflow: hidden;
         margin-top: -80px;
         li{
+            // width: 60%;
             float: left;
             list-style:none;
-            margin-right: 50px; 
+            margin-right: 4%; 
+            img{
+                width: 150px;
+            }
         }
         li:last-child{
             margin: 0;
@@ -148,9 +188,10 @@
 }
 .Content2{
     background-size: 100%;
-    height: 715px;
+    // height: 850px;
     background-image: url('../image/bgc-image3.png');
     background-repeat: no-repeat; 
+    padding-bottom: 200px;
     .content2-active{
         overflow: hidden;
         li{
@@ -180,19 +221,26 @@
         }
         li{
             cursor: pointer;
-            width: 269px;
-            height: 389px;
+            width: 359px;
+            height: 519px;
             list-style: none;
             background-image: url('../image/pict8.png');
             background-repeat: no-repeat;
             background-size: 100% 100%;
             text-align: center;
             float: left;
-            margin-right: 65px;
+            margin-right:4.5%;
+            .fenge{
+                img{
+                    width: 90%;
+                }
+            }
             .list-box{
-              padding-left: 36px;
+                width: 280px;
+              padding-left: 46px;
               padding-right: 30px;
               padding-top: 60px;
+              text-align: center;
               .rule{
                   margin-top: 20px;
               }
@@ -211,7 +259,7 @@
                         color:rgba(102,102,102,1);
                         font-size: 12px;
                         text-align: right;
-                        margin: 5px;
+                        margin: 10px 15px;
                   }
                   p:nth-of-type(4){
                         font-family:MicrosoftYaHei-Bold;
@@ -226,7 +274,7 @@
                       }
                   }
                   .progress{
-                        width:150px;
+                        width:80%;
                         height:8px; 
                         background:rgba(229,229,229,1);
                         border-radius: 4px;
@@ -260,10 +308,11 @@
 }
 .Recommended{
     width: 100%;
-    height: 709px;
+    height: 760px;
     background-image: url('../image/bgc-image4.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    overflow: hidden;
     .head_title{
         text-align: center; 
         margin: 0 auto;
@@ -276,17 +325,18 @@
             margin: 0;
         }
         li{
-            width: 220px;
-            height: 364px;
+            width: 293px;
+            height: 485px;
             background-image: url('../image/pict12.png');
             background-repeat: no-repeat;
+            background-size: 100% 100%;
             float: left;
             list-style: none;
-            margin-right:145px;
+            margin-right:13%;
             .list-box{
-                padding-top:50px;
+                padding-top:100px;
                 text-align: center;
-                padding-left: 10px;
+                padding-left: 20px;
                 padding-right: 10px;
                 p{
                     text-align: left;
@@ -320,7 +370,9 @@
         float: right;
          background-image: url('../image/pict13.png');
          background-repeat: no-repeat;
-         margin-top: 30px;
+        //  margin-top: 30px;
+        //  position: relative;
+        //  right: 10px;
          p{
             font-size:16px;
             font-family:MicrosoftYaHei;
@@ -338,9 +390,13 @@
     background-size: 100% 100%;
      .head_title{
         text-align: center; 
-        margin: 0 auto;
+        // margin: 0 auto;
         padding-top:50px;
         padding-bottom:40px;
+        img{
+            // width: 378px;
+            text-align: center;
+        }
     }
     .discount-list{
         overflow: hidden;
@@ -348,24 +404,28 @@
             margin: 0
         }
         li{
-            width: 226px;
-            height: 120px;
+            width: 300px;
+            height: 160px;
             float: left;
             overflow: hidden;
             list-style: none;
             background-image: url('../image/pict15.png');
+            background-size: 100% 100%;
             background-repeat: no-repeat;
-            margin-right: 139px;
+            margin-right: 12%;
+            display: flex;
+             cursor: pointer;
             div{
                 float: left;
             }
             div:first-of-type{
+
                 p{
                     font-size:24px;
                     font-family:MicrosoftYaHei;
                     color:rgba(114,85,14,1);
-                    line-height: 120px;
-                    margin-left:5px;
+                    line-height: 160px;
+                    margin-left:10px;
                     span{
                         font-size:72px;
                         font-family:Impact;
@@ -375,10 +435,10 @@
                 }
             }
             div:nth-of-type(2){
-                margin-left: 20px;
-                margin-top: 25px;
+                margin-left: 60px;
+                margin-top: 45px;
                 p{
-                    font-size:13px;
+                    font-size:14px;
                     font-family:MicrosoftYaHei;
                     color:rgba(114,85,14,1);
                     margin-bottom: 5px;
@@ -392,8 +452,20 @@
                     line-height: 28px;
                     font-size: 12px;
                     text-align: center;
+                    opacity: 0.5;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 1;
+                        transition:0.3s all ;
+                    }
                 }
             }
+        }
+        li:filst-child {
+            text-align: left;
+        }
+        li:nth-child(2) {
+            text-align: center;
         }
     }
     .content1_more{
@@ -404,6 +476,7 @@
          background-repeat: no-repeat;
          background-size: 100% 100%;
          margin-top: 30px;
+         margin-right: 10px;
          p{
             font-size:12px;
             font-family:MicrosoftYaHei;
